@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="300.0" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="260.0" spacing="30.0">
+         <children>
+            <Label text="Imie:">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Label>
+            <TextField fx:id="nameTextField" />
+            <Label fx:id="statusName" text="OK" textFill="#10da17" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="260.0" spacing="5.0">
+         <children>
+            <Label text="Nazwisko:" />
+            <TextField fx:id="surnameTextField" editable="false" />
+            <Label fx:id="statusSurname" text="OK" textFill="#26e40d">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="260.0" spacing="10.0">
+         <children>
+            <Label text="Rok urodzenia:" />
+            <TextField fx:id="birthYear" prefHeight="25.0" prefWidth="41.0" />
+            <CheckBox fx:id="confirmCheckBox" mnemonicParsing="false" text="potwierdzam" />
+         </children>
+      </HBox>
+      <HBox prefHeight="27.0" prefWidth="260.0" spacing="10.0">
+         <children>
+            <Label text="Twoj wiek to :" />
+            <Label fx:id="yourAgeLabel" />
+         </children>
+      </HBox>
+      <Button fx:id="loginBtn" mnemonicParsing="false" text="Zaloguj" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
